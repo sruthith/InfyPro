@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        .img-thumbnail{
+            height: 250px;
+            width: 100%;
+        }
+        .img-thumbnail:hover{
+            opacity: .5;
+            transform:translateY(-20px);
+        }
+        .img-thumbnail .content {
+            position: absolute;
+            text-align: center;
+            top: 40%;
+            width: 100%;
+            font-family:'Pacifico', cursive;
+            color: white;
+            font-weight:900;
+        }
+
+
+        .col-md-4 {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 backgroundcolor:orange>About Infosys</h1><br />
+   <p style="font-family:Arial;font-weight:bold"> Infosys is a global leader in technology services and consulting. We enable clients in 45 countries to create and execute strategies for their digital transformation. From engineering to application development, knowledge management and business process management, we help our clients find the right problems to solve, and to solve these effectively. Our team of 200,000+ innovators, across the globe, is differentiated by the imagination, knowledge and experience, across industries and technologies that we bring to every project we undertake.
+    </p>
+    <br />
+    <br />
+    <br />
+    <h2 style="font-weight=bold;text-align:center;">WHAT'S NEAR BY</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+                <div class="img-thumbnail">
+                   <a href="~/Home/Office" title=""> <img src="@Url.Content("~/Content/Images/office.jpeg")" class="img-responsive"></a>
+                    <h2 class="content">Hub</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-thumbnail">
+                    <a href="~/Home/Transportation" title="">
+                        <img src="@Url.Content("~/Content/Images/bus.jpg")" class="img-responsive"></a>
+                        <h2 class="content">Transportation</h2>
+</div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-thumbnail">
+                    <a href="~/Home/ParkingLot" title="">
+                        <img src="@Url.Content("~/Content/Images/ParkingLots.jpg")" class="img-responsive"></a>
+                        <h2 class="content">Parking Lots</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="img-thumbnail">
+                    <a href="~/Home/ApartmentsAndBuildings" title="">
+                        <img src="@Url.Content("~/Content/Images/Buildings and Apartments.jpg")" class="img-responsive"></a>
+                        <h2 class="content">Accomodation</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-thumbnail">
+                    <a href="~/Home/Shopping" title="">
+                        <img src="@Url.Content("~/Content/Images/Shopping2.jpg")" class="img-responsive"></a>
+                        <h2 class="content">Shopping</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-thumbnail">
+                    <a href="~/Home/Restaurants" title="">
+                        <img src="@Url.Content("~/Content/Images/Restaurant.jpg")" class="img-responsive"></a>
+                        <h2 class="content">Restuarants</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    </body>
+</html>
